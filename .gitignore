@@ -25,3 +25,4 @@
 ###< symfony/asset-mapper ###
 .idea
 /public/uploads
+/config/secrets/*/*.decrypt.private.php
