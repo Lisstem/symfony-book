@@ -15,9 +15,7 @@
         <header>
             <h1><a href="{{ path('homepage') }}">Guestbook</a></h1>
             <ul>
-                {% for conference in conferences %}
-                    <li><a href="{{ path('conference', { slug: conference.slug }) }}">{{ conference }}</a></li>
-                {% endfor %}
+                {{ render_esi(path('conference_header')) }}
             </ul>
             <hr />
         </header>
